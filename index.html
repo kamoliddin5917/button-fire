@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>BUTTON ANIMATED WAVY</title>
+</head>
+
+<body>
+  <div class="container">
+    <button>BUTTON 1</button>
+    <button>BUTTON 2</button>
+    <button>BUTTON 3</button>
+  </div>
+
+  <svg>
+    <defs>
+      <filter id="wave0">
+        <feTurbulence type="fractalNoise" baseFrequency="0.09 0.01" numOctaves="1" result="warp" />
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
+      </filter>
+      <filter id="wave1">
+        <feTurbulence type="fractalNoise" baseFrequency="0.07 0.001" numOctaves="1" result="warp" />
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="15" in="SourceGraphic" in2="warpOffset" />
+      </filter>
+      <filter id="wave2">
+        <feTurbulence type="fractalNoise" baseFrequency="0.05 0.0001" numOctaves="1" result="warp" />
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
+      </filter>
+      <filter id="wave3">
+        <feTurbulence type="fractalNoise" baseFrequency="0.03 0.001" numOctaves="1" result="warp" />
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="15" in="SourceGraphic" in2="warpOffset" />
+      </filter>
+      <filter id="wave4">
+        <feTurbulence type="fractalNoise" baseFrequency="0.02 0.01" numOctaves="1" result="warp" />
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
